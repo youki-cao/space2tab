@@ -20,7 +20,7 @@ def main():
 
     # Check arguments
     if len(sys.argv) != 3:
-        print("ERROR: Wrong Number of Arguments Provided\n")
+        print("ERROR: Wrong Number of Arguments Provided")
         print(usage)
         exit(1)
 
@@ -31,7 +31,7 @@ def main():
         lines = "\n".join(convert_space(lines))
 
     except FileNotFoundError:
-        print("Error: \"" + sys.argv[1] + "\" not found.\n")
+        print("Error: \"" + sys.argv[1] + "\" not found.")
         print(usage)
         exit(1)
 
@@ -41,7 +41,7 @@ def main():
             outputFile.writelines(lines)
 
     except FileNotFoundError:
-        print("Error: \"" + sys.argv[2] + "\" not found.\n")
+        print("Error: \"" + sys.argv[2] + "\" not found.")
         print(usage)
         exit(1)
 
