@@ -17,7 +17,10 @@ def convert_space(lines):
 
 
 def main():
-    usage = "Usage: " + sys.argv[0] + " -a [-o output_file_prefix] / -f input_file [-o output_file]"
+    usage = "Usage: " + sys.argv[0] + " -a [-o output_file_prefix] / -f input_file [-o output_file]\n"\
+          + "       -a : Process all files in current folder. \n" \
+          + "       -o : Output File Name , or Output File Prefix if '-a' flag specified. \n"\
+          + "       -f : Input File Name if '-a' flag not specified"
 
     # Check arguments
     if not (len(sys.argv) in (2, 3, 4, 5)):
